@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Githu's Portfolio</title>
+		<title>Githu Analytics</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,7 +19,7 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="index.html">Lewis Githu</a></h1>
+						<h1><a href="index.html">Githu Analytics</a></h1>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -112,7 +112,7 @@
 							<h2 class="major">Get in touch</h2>
 							<p>If any of my projects invites you to get in touch, do not hesitate to reach out.
 							</p>
-							<form method="POST" action="https://formspree.io/f/mqpenkwa">
+							<form method="POST" action="https://formspree.io/f/mqpenkwa" id="contact-form" onsubmit="setTimeout(function(){window.location.reload();}, 10); return true;">
 								<div class="fields">
 									<div class="field">
 										<label for="name">Your Name</label>
@@ -128,7 +128,7 @@
 									</div>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="primary" /></li>
+									<li><button type="submit" class="primary">Send Message</button></li>
 								</ul>
 							</form>
 
