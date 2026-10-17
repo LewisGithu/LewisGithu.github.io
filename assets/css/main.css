@@ -4173,3 +4173,20 @@ input, select, textarea {
     object-fit: cover; /* Crops cleanly to fill the box without squishing */
     object-position: top center; /* Keeps dashboard titles/headers visible */
 }
+/* Reduce the size of the spotlight project images */
+.wrapper.spotlight .image img {
+    width: 100% !important;
+    max-width: 450px !important; /* Forces the image to be smaller */
+    height: auto !important;
+    display: block;
+    margin: 0 auto; /* Centers the image inside its box */
+    object-fit: contain !important; /* Ensures the whole dashboard is visible without cropping */
+}
+
+/* Adjust the image container layout background */
+.wrapper.spotlight .image {
+    background-color: transparent !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
