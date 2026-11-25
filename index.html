@@ -61,37 +61,44 @@
 									<a href="https://github.com/LewisGithu/YouTube-API-Waigera-s-Channel-Analysis" class="image"><img src="images/yt.jpg" alt="YouTube Channel Analysis Portfolio Preview" /></a>
 									<div class="content" style = "flex: 1; text-align: left">
 										<h2 class="major">YouTube Channel Performance Engine</h2>
-										<p>An end-to-end data pipeline that extracts channel video metrics using the YouTube Data API.<br />
-										The unstructured video data is processed in Databricks, where Google Gemini AI model automatically parses and classifies content categories and vehicle models.<br /> 
-										The final metrics are transformed and modeled into an interactive, high-performance <a href="https://public.tableau.com/app/profile/lewis.githu1620/viz/WaigeraYouTubeChannelPerformance/Dashboard" target="_blank">Tableau Dashboard</a>.
+										<p>
+											<strong>Problem:</strong> Evaluating creator engagement across a growing video catalog is time-consuming when content formats and featured vehicle models are buried inside unstructured titles and metadata.<br />
+											<strong>Solution:</strong> Engineered an automated end-to-end pipeline that extracts channel metrics (videos, views, likes, comments) via the YouTube Data API and uses Google Gemini AI in Databricks to automatically classify video formats and featured car models.<br />
+											<strong>Tools:</strong> YouTube Data API v3, Python, PySpark, Databricks (ai_parse / Google Gemini), Databricks SQL, Pandas, Tableau.<br />
+											<strong>Result:</strong> Built an interactive, long-form <a href="https://public.tableau.com/app/profile/lewis.githu1620/viz/WaigeraYouTubeChannelPerformance/Dashboard" target="_blank">Tableau Dashboard</a> that uncovered key content drivers—showing that road trip videos generate 40% higher average watch times than standard car reviews and BMW M3 features drive the highest comment engagement ratio.
 										</p>
 										<a href="https://github.com/LewisGithu/YouTube-API-Waigera-s-Channel-Analysis" class="special">Learn more</a>
 									</div>
 								</div>
 							</section>
-						<!-- RUMBLE SCRAPING & DATABRICKS ETL -->
+							<!-- RUMBLE SCRAPING & DATABRICKS ETL -->
 							<section id="project-rumble-etl" class="wrapper spotlight style2">
 								<div class="inner">
 									<a href="https://github.com/LewisGithu/Rumble-Web-Scrapping/tree/main" class="image" target="_blank"><img src="images/rumble.jpg" alt="Rumble Analytics Pipeline Preview" /></a>
 									<div class="content">
-										<h2 class="major">Rumble Channel Analytics & Medallion ETL</h2>
-										<p>An end-to-end data engineering pipeline built to extract livestream performance metrics from <a href="https://rumble.com" target="_blank">Rumble</a> using Python, Playwright, and BeautifulSoup.<br />
-										The raw HTML snapshots are parsed into structured datasets and processed in Databricks across Bronze, Silver, and Gold Delta tables, culminating in an interactive <a href="https://github.com/LewisGithu/Rumble-Web-Scrapping/tree/main/dashboard.pdf" target="_blank">Databricks BI Dashboard</a>.
+										<h2 class="major">Rumble Channel Analytics &amp; Medallion ETL</h2>
+										<p>
+											<strong>Problem:</strong> Dynamic JavaScript rendering and anti-bot firewalls prevent standard HTTP requests from extracting livestream performance metrics on <a href="https://rumble.com" target="_blank">Rumble</a>.<br />
+											<strong>Solution:</strong> Built a two-stage local scraping pipeline using Playwright to capture rendered DOM snapshots across paginated livestream pages and BeautifulSoup to parse custom HTML5 web components (&lt;rum-video-thumbnail&gt;), then processed the data through a Bronze-Silver-Gold Medallion architecture in Databricks with AI topic classification.<br />
+											<strong>Tools:</strong> Python, Playwright, BeautifulSoup4, Pandas, Databricks (Delta Lake, PySpark, SQL, AI/BI Dashboards).<br />
+											<strong>Result:</strong> Delivered a curated Gold analytical layer and interactive <a href="https://github.com/LewisGithu/Rumble-Web-Scrapping/tree/main/dashboard.pdf" target="_blank">Databricks BI Dashboard</a> revealing that livestreams over 2 hours consistently generate higher total views and stronger comment-to-view ratios, while scheduled evening broadcasts drive peak view velocity within the first 24 hours.
 										</p>
 										<a href="https://github.com/LewisGithu/Rumble-Web-Scrapping/tree/main" class="special" target="_blank">Learn more</a>
 									</div>
 								</div>
 							</section>
 
-						<!-- One -->
+							<!-- One -->
 							<section id="project-cmc-api" class="wrapper spotlight style1">
 								<div class="inner" style="flex-wrap: wrap;">
-									<a href="https://github.com/LewisGithu/CoinmarketAPI/blob/main/coinmarketcap_api.ipynb" class="image"><img src="images/8crypto.webp" alt="" /></a>
+									<a href="https://github.com/LewisGithu/CoinmarketAPI/blob/main/coinmarketcap_api.ipynb" class="image" target="_blank"><img src="images/8crypto.webp" alt="Cryptocurrency API Project Preview" /></a>
 									<div class="content" style="flex: 1; text-align: left;">
-										<h2 class="major">Cryptocurrency API Project</h2>
-										<p>In this Project, I pull Cryptocurrencies data from Coinmarket using an API.<br />
-										I then track live price changes and plot line graphs to show the fluctuations.<br />
-										Below is the Interactive Streamlit Dashboard.
+										<h2 class="major">Cryptocurrency Live Market Pipeline &amp; Dashboard</h2>
+										<p>
+											<strong>Problem:</strong> Tracking real-time price fluctuations across top cryptocurrencies requires automated ingestion and flattening of nested API JSON payloads rather than static spreadsheets.<br />
+											<strong>Solution:</strong> Developed an automated Python data pipeline with header authentication and error handling to pull live market snapshots at regular intervals, normalize nested JSON responses into structured DataFrames, and power a live multi-currency web app.<br />
+											<strong>Tools:</strong> Python, CoinMarketCap API, requests, Pandas, Seaborn, Matplotlib, Streamlit.<br />
+											<strong>Result:</strong> Created an automated, timestamped data pipeline and interactive Streamlit dashboard below enabling real-time tracking of top-10 cryptocurrency trends and 1h vs. 24h price changes across USD, KES, EUR, and GBP.
 										</p>
 									</div>
 
@@ -114,7 +121,7 @@
 											<li><a href="https://cyptotracker.streamlit.app/" target="_blank" class="button primary">Open Fullscreen App</a></li>
 											<li><a href="https://github.com/LewisGithu/CoinmarketAPI/tree/main/crypto_streamlit_app" target="_blank" class="button">View Source Code</a></li>
 										</ul>
-										<a href="https://github.com/LewisGithu/CoinmarketAPI" class="special">Learn more</a>
+										<a href="https://github.com/LewisGithu/CoinmarketAPI" class="special" target="_blank">Learn more</a>
 									</div>
 								</div>
 							</section>
@@ -125,8 +132,12 @@
 									<a href="https://github.com/LewisGithu/Murang-a-County-Government-Performance" class="image"><img src="images/mcg.jpg" alt="" /></a>
 									<div class="content">
 										<h2 class="major">DataBricks Murang'a County Government Performance Project</h2>
-										<p>Analysis of Murang'a County Government Performance using Databricks.<br />
-										 I get the data from the <a href="https://projects.muranga.go.ke" target="_blank">official county website</a> and transform it to a visualized dashboard in Databricks using SQL and Genie AI Workspace.</p>
+										<p>
+											<strong>Problem:</strong> Comparing county project delivery across administrations (2013–2026) meant dealing with messy public spreadsheets and double-counted budgets on shared ward projects.<br />
+											<strong>Solution:</strong> Cleaned the <a href="https://muranga.go.ke" target="_blank">official county records</a> in Databricks, split shared budgets fairly across wards and partners, and matched each governor's first four years for a fair comparison.<br />
+											<strong>Tools:</strong> Databricks (Unity Catalog, Delta Lake, AI/BI Dashboards, Genie AI Workspace, SQL), Python, YAML Metric Views.<br />
+											<strong>Result:</strong> Built an executive dashboard that flagged 29 stalled projects, exposed zero-spend reporting gaps, and showed that both administrations achieved ~85% completion and ~70% spend efficiency despite contrasting strategies (86 large projects under Wa Iria vs. 781 smaller community projects under Kang'ata).
+										</p>
 										<a href="https://github.com/LewisGithu/Murang-a-County-Government-Performance" class="special">Learn more</a>
 									</div>
 								</div>
